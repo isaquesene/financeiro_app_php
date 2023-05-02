@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista</title>
+
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+     <!--Navbar Menu-->
+  <header>
+    <div class="logo">
+      <img src="image/dolar.png" alt="">
+      <a href="#"  class="header_logo">Financeiro</a>
+    </div>
+    <nav class="nav" id="nav-menu">
+      <ion-icon name="close-outline" class="header_close" id="close-menu"></ion-icon>
+
+
+      <ul class="nav_list">
+        <li class="nav_item"><a href="index.php" class="nav_link">Gastos</a></li>
+        <li class="nav_item"><a href="#" class="nav_link">Previsão</a></li>
+      </ul>
+    </nav>
+    <ion-icon name="menu-outline" class="header_toggle" id="toggle-menu"></ion-icon>
+
+  </header>
+
+  <div class="todo-container">
+        <!--<header>
+            <h1>Lista</h1>
+        </header>-->
+        <form id="todo-form">
+            <p>Adicione itens na lista:</p>
+            <div class="form-control">
+                <input type="text" id="todo-input" placeholder="Add item">
+                <button type="submit">
+                    <ion-icon name="add-outline"></ion-icon>
+                </button>
+            </div>
+        </form>
+        <form id="edit-form" class="hide">
+            <p>Editar item:</p>
+            <div class="form-control">
+                <input type="text" id="edit-input" placeholder="Editar item">
+                <button type="submit">
+                    <ion-icon name="create-outline"></ion-icon>
+                </button>
+            </div>
+            <button id="cancel-edit-btn">Cancelar</button>
+
+        </form>
+        <div id="toolbar">
+            <div id="search">
+                <h4>Pesquisar</h4>
+                <form>
+                    <input type="text" id="search-input" placeholder="buscar">
+                    <!--<button id="erese-button">
+
+                    </button>-->
+                </form>
+            </div>
+            <div id="filter">
+                <h4>Filtrar</h4>
+                <select id="filter-select">
+                    <!--vazio-->
+                </select>
+            </div>
+        </div>
+        <div id="todo-list">
+            <div class="todo done">
+                <h3>Estou fazendo alguma coisa...</h3>
+                <button class="finish-todo">
+                    <ion-icon name="checkmark-outline"></ion-icon>
+                </button>
+                <button class="edit-todo">
+                    <ion-icon name="pencil-outline"></ion-icon>
+                </button>
+                <button class="remove-todo">
+                    <ion-icon name="trash-outline"></ion-icon>
+                </button>
+            </div>
+            <div class="todo">
+                <h3>Estudar javascript...</h3>
+                <button class="finish-todo">
+                    <ion-icon name="checkmark-outline"></ion-icon>
+                </button>
+                <button class="edit-todo">
+                    <ion-icon name="pencil-outline"></ion-icon>
+                </button>
+                <button class="remove-todo">
+                    <ion-icon name="trash-outline"></ion-icon>
+                </button>
+            </div>
+        </div>
+  </div>
+
+<section class="ends">
+    <p>Desenvolvido por Isaque Sene © 2022</p>
+</section>
+
+
+  <!--navbar script-->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <script src="js/script.js"></script>
+  <script src="js/lista.js"></script>
+</body>
+</html>
